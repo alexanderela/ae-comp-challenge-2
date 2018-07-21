@@ -1,12 +1,23 @@
+/*General*/
 * {
 	box-sizing: border-box;
 }
 
+.body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
 
 /*Header*/
 
-.site-header {
-	
+.header {
+	background-color: #2B2B2B;
 }
 
 .nav-button-text {
@@ -32,20 +43,32 @@
 
 /*Article*//*HeaderA*/
 
-h2 {
+body {
+	background-color: #EFEFEF;
+}
 
+h2 {
+	padding: 0;
 }
 
 .article-gallery {
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	/*grid-template-columns: repeat(4, 1fr);*/
+	grid-gap: 1rem;
+	grid-auto-flow: dense;
+	width: 100%;
 }
 
 .article-entry {
-
+	margin: 0 auto;
+	/*width: 20vw;*/
 }
 
 .article-header {
-	
+	background-image: url("Images/Baby_eyes.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
 }
 
 .aside-share-icon {
@@ -67,7 +90,8 @@ h3 {
 /*Article*//*Main*/
 
 .article-main {
-
+	background-color: #FAFAFA;
+	width: 100%;
 }
 
 .article-link-insert {
