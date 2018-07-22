@@ -1,55 +1,107 @@
+/*General*/
 * {
 	box-sizing: border-box;
 }
 
+.body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
 
 /*Header*/
 
-.site-header {
-	
+.header {
+	background-color: #2B2B2B;
 }
 
 .nav-button-text {
-
+	color: #8D8D8D;
 }
 
 .nav-button-icon {
-
+	/*height: 1rem;*/
 }
 
-.username-menu-text {
+.icon-shares {
+	background-image: url("Icons/shares.svg");
+	/*height: 1rem;*/
+}
 
+.icon-list {
+	background-image: url("Icons/list.svg");
+	/*height: 1rem;*/
+}
+
+.icon-personal {
+	background-image: url("Icons/personal.svg");
+	/*height: 1rem;*/
+}
+
+
+.username-menu-text {
+	color: #57B0F9;
 }
 
 .username-menu-icon {
+	background-image: url("Icons/user.svg");
+	height: 1rem;
+}
 
+.username-menu-arrow {
+	background-image: url("Icons/user-arrow.svg");
+	height: 1rem;
 }
 
 .h1-icon {
-
+	background-image: url("Icons/h1-logo.svg");
+	height: 2rem;
 }
 
 
 /*Article*//*HeaderA*/
 
-h2 {
+body {
+	background-color: #EFEFEF;
 
+}
+
+h2 {
+	padding: 0;
+	color: #4D4D4D;
 }
 
 .article-gallery {
-
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/*grid-template-columns: repeat(4, 1fr);*/
+	grid-gap: 1rem;
+	/*grid-auto-flow: dense;*/
+	width: 100%;
 }
 
 .article-entry {
-
+	height: 20rem;
+	box-shadow: 1px 1px 1px 1px grey;
 }
 
 .article-header {
-	
+	background-image: url("Images/interpol.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	/*height: 10rem;*/
+	padding: 1rem;
 }
 
 .aside-share-icon {
-
+	/*height: 4rem;*/
 }
 
 .view-counter {
@@ -65,19 +117,77 @@ h3 {
 }
 
 /*Article*//*Main*/
+main {
+		margin: 0 1rem;
+}
 
 .article-main {
-
+	background-color: #FAFAFA;
+	width: 100%;
+	padding: 1rem;
+	height: 20rem;
 }
 
 .article-link-insert {
+	background-color: #EFEFEF;
+	width: 100%;
+	padding: 0.5rem;
 
 }
 
-h4 {
+h5 {
 
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/*Article Fonts*/
+/*Sizes*/
+.large-no-caps {
+	font-size: 1rem;
+}
+
+.small-caps {
+	font-size: 0.75rem;
+}
+
+.small-no-caps {
+font-size: 0.75rem;
+}
+
+.large-counter {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+/*Colors*/
+.font-black {
+	color: #4D4D4D;
+}
+
+.font-blue {
+	color: #57B0F9;
+}
+
+.font-white {
+	color: #FFF;
+}
+
+
+
+/*Individual*/
+.article-link {
+	color: #8D8D8D;
+	text-decoration: none;
+	word-wrap: break-word;
+}
+
+time {
+	color: #CBCBCB;
+}
 
 
 
