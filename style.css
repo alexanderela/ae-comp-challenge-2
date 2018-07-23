@@ -355,6 +355,20 @@ time {
 }
 
 
+@media screen and (max-width: 830px) {
+	h1 {
+	font-size: 2rem;
+}
+
+.h1-icon {
+	height: 2rem;
+	width: 2rem;
+}
+.header-title {
+	height: 3.8rem;
+}
+}
+
 @media screen and (max-width: 768px) {
 .article-entry {
 	height: 23rem;
@@ -372,18 +386,9 @@ time {
 }
 
 @media screen and (max-width: 700px) {
-h1 {
-	font-size: 2rem;
-}
 
-.h1-icon {
-	height: 2rem;
-	width: 2rem;
-}
 
-.header-title {
-	height: 3.8rem;
-}
+
 
 }
 
