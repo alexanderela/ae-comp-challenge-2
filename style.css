@@ -3,10 +3,10 @@
 	box-sizing: border-box;
 }
 
+
 .body {
 	height: 100%;
 	width: 100%;
-	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -347,10 +347,58 @@ time {
 
 /*Media Queries*/
 
-@media 
+@media screen and (max-width: 1080px) {
+.header-nav {
+	 flex-direction: column;
+   width: 45rem;
+   align-items: flex-start;
+}
+
+}
 
 
+@media screen and (max-width: 768px) {
+.article-entry {
+	height: 23rem;
+}
 
+.article-header {
+	height: 7rem;
+}
+
+.article-main {
+	height: 16rem;
+}
+
+
+}
+
+@media screen and (max-width: 700px) {
+h1 {
+	font-size: 2rem;
+}
+
+.h1-icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.header-title {
+	height: 3.8rem;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 360px) {
+	.article-gallery {
+		display: block;
+	}
+}
 
 
 
