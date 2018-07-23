@@ -19,19 +19,9 @@
 .header {
 	background-color: #2B2B2B;
 	display: flex;
-	justify-content: space-between;
+
 	height: 10rem;
 	padding: 1rem 2rem 2rem;
-}
-
-.header-left {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	width: 30rem;
-	align-items: flex-end;
-	/*height: 8rem;*/
-	margin: 0;
 }
 
 .header-right {
@@ -39,57 +29,124 @@
 	text-align: right;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 8.6rem;
+	align-items: flex-end;
+	width: 70rem;
+	text-align: right;
 	/*margin: 0;*/
 }
 
+.header-top-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 12.5rem;
+}
+
+.header-nav {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	width: 45rem;
+	align-items: flex-end;
+	/*height: 8rem;*/
+	margin: 0;
+	padding: 0;
+}
+
+
+.header-title {
+	display: flex;
+	text-align: right;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 5.5rem;
+}
+
+
+
 h1 {
-	font-size: 2.5rem;
+	font-family: "linguistics pro";
+	font-size: 3rem;
+}
+
+li:hover {
+	color: white;
 }
 
 .nav-button-text {
 	color: #8D8D8D;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+
 }
 
 .nav-button-icon {
-	/*height: 1rem;*/
+	cursor: pointer;
 }
 
+.icon {
+	padding-right: 0.5rem;
+	position: relative;
+	top: 2px;
+}
 .icon-shares {
 	/*background-image: url("Icons/shares.svg");*/
-	height: 1rem;
-	width: 1rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
+
 
 .icon-list {
 	/*background-image: url("Icons/list.svg");*/
-	height: 1rem;
-	width: 1rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
 .icon-personal {
-	height: 1rem;
-	width: 1rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
+.registered {
+	height: 2.5rem;
+	font-size: 0.02rem;
+}
 
 .username-menu-text {
 	color: #57B0F9;
+	cursor: pointer;
+}
+
+.username-menu-text:hover {
+	color: #FFFFFF;
 }
 
 .username-menu-icon {
-	background-image: url("Icons/user.svg");
-	height: 1rem;
+	/*background-image: url("Icons/user.svg");*/
+	height: 2rem;
+	width: 2rem;
+	cursor: pointer;
 }
 
 .username-menu-arrow {
-	background-image: url("Icons/user-arrow.svg");
+	/*background-image: url("Icons/user-arrow.svg");*/
 	height: 1rem;
+	width: 1rem;
+	cursor: pointer;
+	position: relative;
+	top: 3px;
 }
 
 .h1-icon {
 	background-image: url("Icons/h1-logo.svg");
-	height: 2rem;
+	height: 2.5rem;
+	width: 2.5rem;
+	margin-left: 0.25rem;
+	position: relative;
+	top: 4px;
 }
 
 
@@ -103,11 +160,13 @@ body {
 h2 {
 	padding: 0;
 	color: #4D4D4D;
+	font-size: 2rem;
+	font-weight: 600;
 }
 
 .article-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	/*grid-template-columns: repeat(4, 1fr);*/
 
 	grid-gap: 1rem;
@@ -127,7 +186,6 @@ h2 {
 }
 
 .article-header {
-	background-image: url("Images/interpol.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	display: flex;
@@ -136,15 +194,56 @@ h2 {
 	padding: 1rem;
 }
 
+.amsterdam {
+	background-image: url("Article_Images/Amsterdam.jpg");
+	background-size: cover;
+}
+
+.brussels {
+	background-image: url("Article_Images/Brussels.jpg");
+	background-size: cover;
+}
+
+.budapest {
+	background-image: url("Article_Images/Budapest.jpg");
+	background-size: cover;
+}
+
+.hamburg {
+	background-image: url("Article_Images/Hamburg.jpg");
+	background-size: cover;
+}
+
+.prague {
+	background-image: url("Article_Images/Prague.jpg");
+	background-size: cover;
+}
+
+.stockholm {
+	background-image: url("Article_Images/Stockholm.jpg");
+	background-size: cover;
+}
+
+.vienna {
+	background-image: url("Article_Images/Vienna.jpg");
+	background-size: cover;
+}
+
+.zagreb {
+	background-image: url("Article_Images/Zagreb.jpg");
+	background-size: cover;
+}
+
+
 .aside-share-icon {
 	height: 4rem;
 	width: 4rem;
-	/*background-image: url("Icons/share-arrow.svg");*/
-	/*background-size: cover;*/
+	cursor: pointer;
 }
 
 .aside-share-icon:hover {
-
+	height: 4.5rem;
+	width: 4.5rem;
 }
 
 
@@ -162,7 +261,7 @@ h3 {
 
 /*Article*//*Main*/
 main {
-		margin: 0 1rem;
+		margin: 0 2rem;
 }
 
 .article-main {
@@ -202,6 +301,10 @@ p {
 	font-size: 0.75rem;
 }
 
+.day-counter {
+	text-align: center;
+}
+
 .small-no-caps {
 font-size: 0.75rem;
 }
@@ -233,19 +336,18 @@ font-size: 0.75rem;
 	word-wrap: break-word;
 }
 
+.article-link:hover {
+	color: #000000;
+}
+
 time {
 	color: #CBCBCB;
 }
 
 
+/*Media Queries*/
 
-/*Icons*/
-
-
-
-
-
-
+@media 
 
 
 
