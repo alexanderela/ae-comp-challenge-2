@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #EFEFEF;
-
+	margin: 0;
 }
 
 
@@ -65,7 +65,11 @@ body {
 	height: 5.5rem;
 }
 
-
+.menu-icon-hide {
+	display: none;
+	height: 2rem;
+	width: 2rem;
+}
 
 h1 {
 	font-family: "linguistics pro";
@@ -87,6 +91,11 @@ li:hover {
 
 .nav-button-icon {
 	cursor: pointer;
+		padding-left: 0.5rem;
+}
+
+.nav-button-icon:hover {
+	box-shadow: 0 0 1px #FFFFFF;
 }
 
 .icon {
@@ -133,6 +142,14 @@ li:hover {
 	cursor: pointer;
 }
 
+.nav-button-icon:hover {
+	box-shadow: 0 0 1px #FFFFFF;
+}
+
+.nav-button-hover:hover {
+	box-shadow: 0 0 1px #FFFFFF;
+}
+
 .username-menu-arrow {
 	/*background-image: url("Icons/user-arrow.svg");*/
 	height: 1rem;
@@ -140,6 +157,12 @@ li:hover {
 	cursor: pointer;
 	position: relative;
 	top: 3px;
+}
+
+.username-icon-hide {
+	display: none;
+	height: 2rem;
+	width: 2rem;
 }
 
 .h1-icon {
@@ -190,46 +213,41 @@ h2 {
 	justify-content: space-between;
 	height: 10rem;
 	padding: 1rem;
+	background-size: cover;
+	background-position: center;
 }
 
 .amsterdam {
 	background-image: url("Article_Images/Amsterdam.jpg");
-	background-size: cover;
+
 }
 
 .brussels {
 	background-image: url("Article_Images/Brussels.jpg");
-	background-size: cover;
 }
 
 .budapest {
 	background-image: url("Article_Images/Budapest.jpg");
-	background-size: cover;
 }
 
 .hamburg {
 	background-image: url("Article_Images/Hamburg.jpg");
-	background-size: cover;
 }
 
 .prague {
 	background-image: url("Article_Images/Prague.jpg");
-	background-size: cover;
 }
 
 .stockholm {
 	background-image: url("Article_Images/Stockholm.jpg");
-	background-size: cover;
 }
 
 .vienna {
 	background-image: url("Article_Images/Vienna.jpg");
-	background-size: cover;
 }
 
 .zagreb {
 	background-image: url("Article_Images/Zagreb.jpg");
-	background-size: cover;
 }
 
 
@@ -382,33 +400,57 @@ time {
 	height: 16rem;
 }
 
-
 }
 
-@media screen and (max-width: 700px) {
-
-
-
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-}
-
-/*@media screen and (max-width: 360px) {
-	.article-gallery {
-		display: block;
-		width: 100%;
+@media screen and (max-width: 625px) {
+	main {
+		margin: 0 8rem;
 	}
 
+}
+
+@media screen and (max-width: 550px) {
 	main {
-	width: 100%;
-	margin: 0 1rem;
-}*/
+		margin: 0 6rem;
+	}
 
 }
+
+@media screen and (max-width: 500px) {
+
+	main {
+		margin: 0 2rem;
+	}
+
+.header-right {
+	align-items: center;
+
+}
+
+.header-nav {
+	display: none;
+}
+
+.menu-icon-hide {
+	display: inline-block;
+}
+
+.header-top-right {
+	display: none;
+}
+
+.username-icon-hide {
+	display: flex;
+	align-self: flex-end;
+}
+
+
+}
+
+
+
+
+
 
 
 
