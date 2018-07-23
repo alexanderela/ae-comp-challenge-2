@@ -4,10 +4,12 @@
 }
 
 
-.body {
+body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
+	background-color: #EFEFEF;
+
 }
 
 
@@ -19,7 +21,7 @@
 .header {
 	background-color: #2B2B2B;
 	display: flex;
-
+	width: 100%;
 	height: 10rem;
 	padding: 1rem 2rem 2rem;
 }
@@ -152,10 +154,6 @@ li:hover {
 
 /*Article*//*HeaderA*/
 
-body {
-	background-color: #EFEFEF;
-
-}
 
 h2 {
 	padding: 0;
@@ -261,7 +259,7 @@ h3 {
 
 /*Article*//*Main*/
 main {
-		margin: 0 2rem;
+	margin: 0 2rem;
 }
 
 .article-main {
@@ -397,7 +395,14 @@ h1 {
 @media screen and (max-width: 360px) {
 	.article-gallery {
 		display: block;
+		width: 100%;
 	}
+
+	main {
+	width: 100%;
+	margin: 0 1rem;
+}
+
 }
 
 
