@@ -5,67 +5,65 @@
 
 
 body {
-	height: 100%;
-	width: 100%;
-	font-family: 'Open Sans', sans-serif;
 	background-color: #EFEFEF;
-
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	margin: 0;
+	width: 100%;
 }
-
-
-
-
 
 /*Header*/
 
 .header {
 	background-color: #2B2B2B;
 	display: flex;
-	width: 100%;
 	height: 10rem;
 	padding: 1rem 2rem 2rem;
+	width: 100%;
 }
 
 .header-right {
+	align-items: flex-end;
 	display: flex;
-	text-align: right;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-end;
-	width: 70rem;
 	text-align: right;
-	/*margin: 0;*/
+	text-align: right;
+	width: 70rem;
 }
 
 .header-top-right {
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	width: 12.5rem;
 }
 
 .header-nav {
-	list-style-type: none;
+	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
-	width: 45rem;
-	align-items: flex-end;
-	/*height: 8rem;*/
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	width: 45rem;
 }
 
 
 .header-title {
-	display: flex;
-	text-align: right;
-	flex-direction: column;
-	justify-content: space-between;
 	align-items: flex-end;
+	display: flex;
+	flex-direction: column;
 	height: 5.5rem;
+	justify-content: space-between;
+	text-align: right;
 }
 
-
+.menu-icon-hide {
+	display: none;
+	height: 2rem;
+	width: 2rem;
+}
 
 h1 {
 	font-family: "linguistics pro";
@@ -77,16 +75,21 @@ li:hover {
 }
 
 .nav-button-text {
-	color: #8D8D8D;
-	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	color: #8D8D8D;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
 
 }
 
 .nav-button-icon {
 	cursor: pointer;
+	padding-left: 0.5rem;
+}
+
+.nav-button-icon:hover {
+	box-shadow: 0 0 1px #FFFFFF;
 }
 
 .icon {
@@ -95,14 +98,12 @@ li:hover {
 	top: 2px;
 }
 .icon-shares {
-	/*background-image: url("Icons/shares.svg");*/
 	height: 1.5rem;
 	width: 1.5rem;
 }
 
 
 .icon-list {
-	/*background-image: url("Icons/list.svg");*/
 	height: 1.5rem;
 	width: 1.5rem;
 }
@@ -113,8 +114,8 @@ li:hover {
 }
 
 .registered {
-	height: 2.5rem;
 	font-size: 0.02rem;
+	height: 2.5rem;
 }
 
 .username-menu-text {
@@ -128,53 +129,61 @@ li:hover {
 
 .username-menu-icon {
 	/*background-image: url("Icons/user.svg");*/
+	cursor: pointer;
 	height: 2rem;
 	width: 2rem;
-	cursor: pointer;
+}
+
+.nav-button-icon:hover {
+	box-shadow: 0 0 1px #FFFFFF;
+}
+
+.nav-button-hover:hover {
+	box-shadow: 0 0 1px #FFFFFF;
 }
 
 .username-menu-arrow {
-	/*background-image: url("Icons/user-arrow.svg");*/
-	height: 1rem;
-	width: 1rem;
 	cursor: pointer;
+	height: 1rem;
 	position: relative;
 	top: 3px;
+	width: 1rem;
+}
+
+.username-icon-hide {
+	display: none;
+	height: 2rem;
+	width: 2rem;
 }
 
 .h1-icon {
 	background-image: url("Icons/h1-logo.svg");
 	height: 2.5rem;
-	width: 2.5rem;
 	margin-left: 0.25rem;
 	position: relative;
 	top: 4px;
+	width: 2.5rem;
 }
 
 
 /*Article*//*HeaderA*/
-
-
 h2 {
-	padding: 0;
 	color: #4D4D4D;
 	font-size: 2rem;
 	font-weight: 600;
+	padding: 0;
 }
 
 .article-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	/*grid-template-columns: repeat(4, 1fr);*/
-
 	grid-gap: 1rem;
-	/*grid-auto-flow: dense;*/
 	width: 100%;
 }
 
 .article-entry {
-	height: 28rem;
 	box-shadow: 0 0 1px 1px #C0C1C0;
+	height: 28rem;
 	transition-duration: 0.2s;
 }
 
@@ -185,58 +194,52 @@ h2 {
 
 .article-header {
 	background-repeat: no-repeat;
-	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	background-size: cover;
+	background-position: center;
 	height: 10rem;
+	justify-content: space-between;
 	padding: 1rem;
+	width: 100%;
 }
 
+/*Article Header Images*/
 .amsterdam {
 	background-image: url("Article_Images/Amsterdam.jpg");
-	background-size: cover;
 }
 
 .brussels {
 	background-image: url("Article_Images/Brussels.jpg");
-	background-size: cover;
 }
 
 .budapest {
 	background-image: url("Article_Images/Budapest.jpg");
-	background-size: cover;
 }
 
 .hamburg {
 	background-image: url("Article_Images/Hamburg.jpg");
-	background-size: cover;
 }
 
 .prague {
 	background-image: url("Article_Images/Prague.jpg");
-	background-size: cover;
 }
 
 .stockholm {
 	background-image: url("Article_Images/Stockholm.jpg");
-	background-size: cover;
 }
 
 .vienna {
 	background-image: url("Article_Images/Vienna.jpg");
-	background-size: cover;
 }
 
 .zagreb {
 	background-image: url("Article_Images/Zagreb.jpg");
-	background-size: cover;
 }
 
-
 .aside-share-icon {
+	cursor: pointer;
 	height: 4rem;
 	width: 4rem;
-	cursor: pointer;
 }
 
 .aside-share-icon:hover {
@@ -244,18 +247,10 @@ h2 {
 	width: 4.5rem;
 }
 
-
 .view-counter {
 
 }
 
-h5 {
-
-}
-
-h3 {
-
-}
 
 /*Article*//*Main*/
 main {
@@ -264,24 +259,20 @@ main {
 
 .article-main {
 	background-color: #FAFAFA;
-	width: 100%;
-	padding: 1rem 1rem 1.5rem;
 	height: 18rem;
+	padding: 1rem 1rem 1.5rem;
+	width: 100%;
 }
 
 .article-link-insert {
 	background-color: #EFEFEF;
-	width: 100%;
-	padding: 0.5rem;
 	margin: 1rem auto;
+	padding: 0.5rem;
+	width: 100%;
 }
 
 .name-of-playlist {
 	margin-bottom: 1rem;
-}
-
-h5 {
-
 }
 
 p {
@@ -304,7 +295,7 @@ p {
 }
 
 .small-no-caps {
-font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 
 .large-counter {
@@ -354,7 +345,6 @@ time {
 
 }
 
-
 @media screen and (max-width: 830px) {
 	h1 {
 	font-size: 2rem;
@@ -382,41 +372,53 @@ time {
 	height: 16rem;
 }
 
+}
+
+@media screen and (max-width: 625px) {
+	main {
+		margin: 0 8rem;
+}
 
 }
 
-@media screen and (max-width: 700px) {
-
-
-
+@media screen and (max-width: 550px) {
+	main {
+		margin: 0 6rem;
+}
 
 }
 
-
-@media screen and (max-width: 600px) {
-
-}
-
-/*@media screen and (max-width: 360px) {
-	.article-gallery {
-		display: block;
-		width: 100%;
+@media screen and (max-width: 500px) {
+	main {
+		margin: 0 4rem;
 	}
 
-	main {
-	width: 100%;
-	margin: 0 1rem;
-}*/
+.header-right {
+	align-items: center;
 
 }
 
+.header-nav {
+	display: none;
+}
 
+.menu-icon-hide {
+	display: inline-block;
+}
 
+.header-top-right {
+	display: none;
+}
 
+.username-icon-hide {
+	display: flex;
+	align-self: flex-end;
+}
 
+}
 
-
-
-
-
-
+@media screen and (max-width: 400px) {
+	main {
+		margin: 0 2rem;
+	}
+}
