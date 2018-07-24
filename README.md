@@ -6,7 +6,7 @@ I built it using a combination of CSS Grid, Flexbox, and VERY sparing uses of re
 I hope you enjoy!
 
 ##Provided Comp:
-![alt text](ae-comp-challenge-2/Images/Final_Comp.png)
+![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Provided_Comp.png)
 
 ##My Final Comp:
-![alt text](ae-comp-challenge-2/Images/Provided_Comp.png)
+![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Final_Comp.png)
