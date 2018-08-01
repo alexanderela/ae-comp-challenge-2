@@ -8,5 +8,5 @@ I hope you enjoy!
 ## Provided Comp:
 ![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Provided_Comp.png)
 
-## My Final Comp:
+## Final Comp:
 ![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Final_Comp.png)
