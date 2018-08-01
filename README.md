@@ -5,8 +5,8 @@ I built it using a combination of CSS Grid, Flexbox, and VERY sparing uses of re
 
 I hope you enjoy!
 
-##Provided Comp:
+## Provided Comp:
 ![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Provided_Comp.png)
 
-##My Final Comp:
+## My Final Comp:
 ![alt text](https://github.com/alexanderela/ae-comp-challenge-2/blob/master/Images/Final_Comp.png)
